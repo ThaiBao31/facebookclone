@@ -1,0 +1,98 @@
+<header class="header">
+   <app-header></app-header>
+</header>
+<div class="main-content">
+    
+    <div class="sidebar">
+        <div class="sidebar__title">
+            <h1 class="title">Video</h1>
+            <a  class="icon-container">
+                <i class=" bi-gear-fill"></i>
+            </a>
+        </div>
+        <div class="sidebar__search">
+            <label class="sidebar__search-label">
+                <span class="sidebar__search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </span>
+            </label>
+            <input class="sidebar__search-input" type="text" placeholder="Tìm kiếm trên Facebook">
+        </div>
+       
+        <nav class="sidebar__nav">
+            <ul *ngFor="let list_title of Listtitle " class="sidebar__nav-list">
+                <li class="sidebar__nav-item">
+                    <a class="sidebar__nav-link">
+                        <div class="sidebar__nav-icon-wrapper">
+                            <i [class]="list_title.icon"></i>                                    
+                        </div>
+                        <div class="sidebar__nav-text-wrapper">
+                            <span class="sidebar__nav-text">
+                                {{ list_title.title }}
+                            </span>
+                        </div>
+                    </a>
+                </li>
+               
+            </ul>
+        </nav>
+    </div>
+
+    <section class="video-content">
+        <div class="video-content__container" >
+        <article *ngFor="let Listvideo of videos" class="video-post">
+            <header>
+                <div class= "video-post__header">
+                    <div class="video-post__img">
+                        <img [src]="Listvideo.image" class="video-post__logo">
+                    </div>
+                    <div class="video-post__title">
+                        <span class="video-post__name">{{Listvideo.user}}</span>
+                        <p class="video-post__date">{{Listvideo.time}}</p>
+                    </div>
+                </div>
+
+                <pre class="video-post__info">
+                    <app-show-more [text]="Listvideo.content" [limit]="200"></app-show-more>
+                </pre>
+            </header>
+            <div class="video-post__video">
+                <video controls class="video-post__video-element">
+                    {{Listvideo.imagecontent}}
+                </video>
+            </div>  
+            <hr  width="92%" size="1px" color="#f0f2f5" />
+            <div class="video-post__footer">
+                <div class="video-post__actions">
+                  <div class="video-post__actions--icon">
+                    <span class="bi-hand-thumbs-up"></span>
+                    <button class="video-post__action">Thích</button>
+                  </div>
+                  <div class="video-post__actions--icon">
+                    <span class="bi-chat"></span>
+                    <button class="video-post__action">Bình luận</button>
+                  </div>
+                  <div class="video-post__actions--icon">
+                    <span class="bi-send"></span>
+                    <button class="video-post__action">Chia sẻ</button>
+                 </div>
+                </div>
+
+                <div class="video-post__reactions">
+                   <div class="video-post__reactions--right">
+                    <span class=" bi-hand-thumbs-up-fill"></span>
+                    <span class="video-post__like ">{{ Listvideo.likes }}  </span>
+                    <span class="video-post__comment">{{ Listvideo.comments }} bình luận</span>
+                    <span class="video-post__share">{{ Listvideo.share }} chia sẻ</span>
+                   </div>
+                  </div>
+                </div>
+        </article>
+        
+        
+    </div>
+    </section>
+    
+</div>

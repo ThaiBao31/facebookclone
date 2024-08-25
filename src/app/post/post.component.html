@@ -1,0 +1,55 @@
+<div *ngFor="let post of posts" class="postlist">
+    <div class="post__header">
+      <img [src]="post.image" class="post__logo">
+      <div class="post__header-content">
+        <span class="post__page-name">{{ post.user }}</span>
+        <div class="post__status">
+          <span class="post__time">{{ post.time }}</span>
+          <span class="bi-globe-americas"></span>
+        </div>    
+      </div>
+    </div>
+    <div class="post__body">
+      <pre class="post__content">
+        <app-show-more [text]="post.content" [limit]="200"></app-show-more>
+      </pre>
+      <div *ngIf="post.imagecontent.length === 1" class="post__images">
+        <img [src]="post.imagecontent[0]" class="post__image">
+      </div>
+      <div *ngIf="post.imagecontent.length > 1" class="post__images-wrapper">
+        <div *ngFor="let image of post.imagecontent; let i = index" [ngClass]="getImageClass(i, post.imagecontent.length)" class="post__image-wrapper">
+          <img [src]="image" class="post__image">
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="post__footer">
+      <div class="post__reactions">
+        <div class="post__reactions--left">
+          <span class=" bi-hand-thumbs-up-fill"></span>
+          <span class="post__like ">{{ post.likes }}  </span>
+        </div>
+       <div class="post__reactions--right">
+        <span class="post__comment">{{ post.comments }} bình luận</span>
+        <span class="post__share">{{ post.share }} chia sẻ</span>
+       </div>
+      </div>
+      <hr  width="92%" size="1px" color="#f0f2f5" />
+      <div class="post__actions">
+        <div class="post__actions--icon">
+          <span class="bi-hand-thumbs-up"></span>
+          <button class="post__action">Thích</button>
+        </div>
+        <div class="post__actions--icon">
+          <span class="bi-chat"></span>
+          <button class="post__action">Bình luận</button>
+        </div>
+        <div class="post__actions--icon">
+          <span class="bi-send"></span>
+          <button class="post__action">Chia sẻ</button>
+       </div>
+      </div>
+    </div>
+
+</div>

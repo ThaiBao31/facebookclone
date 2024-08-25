@@ -1,0 +1,37 @@
+<div class="login-page">
+  <div class="login-page__content">
+      <div class="login-page__description">
+        <img class="login-page__img" src="assets/core-image/logo-face.png">
+        <p class="login-page__subtitle">Facebook giúp bạn kết nối và chia sẻ<br> với mọi người trong cuộc sống của bạn.</p>
+      </div>
+      
+      <form class="login-form">
+          <div class="login-form__group">
+              <input type="text" class="login-form__input" placeholder="Email hoặc số điện thoại">
+          </div>
+          <div class="login-form__group">
+              <input type="password" class="login-form__input" placeholder="Mật khẩu">
+          </div>
+          <button type="submit" class="login-form__button" (click)="goToMain()">Đăng nhập</button>
+          <a href="#" class="login-form__link">Quên mật khẩu?</a>
+          <hr  width="92%" size="1px" color="grey" />
+          <div class="login-form__button--crecontainer">
+            <button type="button" class="login-form__button login-form__button--create">Tạo tài khoản mới</button>
+          </div>
+          
+      </form>
+  </div>
+
+  <footer class="footer">
+      <div *ngFor="let languagelist of footerLanguages" class="footer__languages">
+          <a href="#" class="footer__link">{{languagelist.name}}</a>
+      </div>
+
+      <hr  width="92%" size="1px" color="grey" />
+
+      <div *ngFor="let linklist of footerLinks" class="footer__links">
+          <a href="#" class="footer__link">{{linklist.title}}</a>
+      </div>
+      
+  </footer>
+</div>

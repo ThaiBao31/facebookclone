@@ -1,0 +1,77 @@
+<header class="header">
+    <app-header></app-header>
+ </header>
+ <div class="main-content">
+     
+     <div class="sidebar">
+        <div class="sidebar__header">
+            <div class="sidebar__title">
+                <h1 class="title">Nhóm</h1>
+                <a  class="icon-container">
+                    <i class=" bi-gear-fill"></i>
+                </a>
+            </div>
+            <div class="sidebar__search">
+                <label class="sidebar__search-label">
+                    <span class="sidebar__search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </span>
+                </label>
+                <input class="sidebar__search-input" type="text" placeholder="Tìm kiếm trên Nhóm">
+            </div>
+        </div>
+        
+        
+         <nav class="sidebar__nav">
+             <ul *ngFor="let list_title of Listtitle " class="sidebar__nav-list">
+                 <li class="sidebar__nav-item">
+                     <a class="sidebar__nav-link">
+                         <div class="sidebar__nav-icon-wrapper">
+                             <i [class]="list_title.icon"></i>                                    
+                         </div>
+                         <div class="sidebar__nav-text-wrapper">
+                             <span class="sidebar__nav-text">
+                                 {{ list_title.title }}
+                             </span>
+                         </div>
+                     </a>
+                 </li>    
+             </ul>
+
+             <button class="sidebar__button">
+                <span class="sidebar__button-text">+ Tạo nhóm mới</span>
+             </button>
+
+             <hr  width="92%" size="1px" color="black" />
+
+             <ul *ngFor="let list_group of Grouplist " class="sidebar__nav-list">
+                <li class="sidebar__nav-item">
+                    <a class="sidebar__nav-link">
+                        <div class="sidebar__nav-icon-wrapper">
+                            <img [src]="list_group.img" class="sidebar__nav-img">                        
+                        </div>
+                        <div class="sidebar__nav-text-wrapper">
+                            <p class="sidebar__nav-title">{{list_group.title}}</p>
+                            <span class="sidebar__nav-textgroup">
+                                {{ list_group.des }}
+                            </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+         </nav>
+     </div>
+
+     <div class="post__container">
+      <p class="post_statusnew">Hoạt động gần đây</p>
+      <div  class="postlist">
+        <app-post></app-post>
+     </div>
+     
+    </div>
+    
+ 
+     
+ </div>

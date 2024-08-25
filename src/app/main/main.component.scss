@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "left-sidebar main-content right-sidebar";
+    grid-template-columns: 1.3fr 2.35fr 1.3fr;
+    grid-template-rows: auto 1fr;
+    height: 1000px;
+  }
+  
+  app-header {
+    grid-area: header;
+    background-color: #f4f4f4;
+  }
+  
+  app-leftsidebar, app-rightsidebar, app-story {
+    transition: overflow 0.3s ease;
+  }
+  
+  app-leftsidebar {
+    grid-area: left-sidebar;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+    overflow-y: hidden;
+    border: none;
+  }
+  
+  app-leftsidebar:hover {
+    overflow-y: auto;
+  }
+  
+  app-rightsidebar {
+    grid-area: right-sidebar;
+    background-color: #f4f4f4;
+    border-left: 1px solid #ddd;
+    overflow-y: hidden;
+    border: none;
+  }
+  
+  app-rightsidebar:hover {
+    overflow-y: auto;
+  }
+  
+  app-story {
+    grid-area: main-content;
+    background-color: #f4f4f4;
+    height: 270px;
+    overflow-x: hidden;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: none;
+  }
+  
+  app-story:hover {
+    overflow-x: auto;
+  }
+  
+  app-status {
+    grid-area: main-content;
+    background-color: #f4f4f4;
+    margin-top: 280px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  app-post{
+    grid-area: main-content;
+    background-color: #f4f4f4;
+    margin-top: 400px;
+    margin-left: 30px;
+    margin-right: 30px;
+  
+  }
+  
+  
+  .center{
+    grid-area: main-content;
+    overflow-x: hidden;
+  }
+

@@ -1,0 +1,59 @@
+<div class="leftsidebar">
+    <div class="leftsidebar__nav">
+        <ul  *ngFor="let item of menuItems" class="leftsidebar__nav-list">
+            <li class="leftsidebar__nav-item">
+                <a class="leftsidebar__nav-link">
+                    <div class="leftsidebar__nav-icon-wrapper">
+                        <i [class]="item.iconUrl"></i>                                    
+                    </div>
+                    <div class="leftsidebar__nav-text-wrapper">
+                        <span class="leftsidebar__nav-text">
+                            {{ item.name }}
+                        </span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+  
+
+    <hr  width="92%" size="1px" color="grey" />
+    <div class="leftsidebar__text">
+        <span class="leftsidebar__text-group">
+            Lối tắt của bạn
+        </span>
+        <a class="leftsidebar__text-edit">
+            Chỉnh sửa
+        </a>
+    </div>
+
+    <div class="leftsidebar__group">
+        <ul class="leftsidebar__group-list">
+            <li class="leftsidebar__group-item" *ngFor="let item of sidebarItems">
+                <a class="leftsidebar__group-link">
+                    <div class="leftsidebar__group-icon-wrapper">
+                        <img [src]="item.iconUrl">
+                    </div>
+                    <div class="leftsidebar__group-text-wrapper">
+                        <span class="leftsidebar__group-text">{{ item.text }}</span>
+                    </div>
+                </a>
+            </li>
+            <li class="leftsidebar__group-item">
+                <a class="leftsidebar__group-link">
+                    <div class="leftsidebar__group-icon-wrapper-more">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                          </svg>                           
+                    </div>
+                    <div class="leftsidebar__group-text-wrapper">
+                        <span class="leftsidebar__group-text">Xem thêm</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+
+</div>

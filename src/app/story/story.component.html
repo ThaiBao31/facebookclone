@@ -1,0 +1,9 @@
+<div class="stories-container">
+    <div *ngFor="let story of storieslist" class="story">
+      <div class="story-image" [ngStyle]="{'background-image': 'url(' + story.image + ')'}">
+        <img [src]="story.avatar" class="story-avatar">
+      </div>
+      <div class="story-name">{{ story.name }}</div>
+    </div>
+  </div>
+  

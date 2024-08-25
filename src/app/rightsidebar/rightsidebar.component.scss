@@ -1,0 +1,290 @@
+.rightsidebar {
+    width: auto;
+    height: 100%;
+    background-color: #f0f2f5;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.rightsidebar__ad{
+
+}
+
+.rightsidebar__title{
+    color:rgb(84, 81, 81);
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.rightsidebar__ad-container{
+    display: flex;
+    align-items: center;
+    border: 1px solid none;
+    border-radius: 7px;
+}   
+
+.rightsidebar__ad-container:hover{
+    background-color: #e4e6eb;
+}
+
+.rightsidebar__ad-image{
+    height: 100px;
+    width: 100px;
+    margin: 3px 10px;
+    border: 1px solid none;
+    border-radius: 10px;
+}
+
+.rightsidebar__ad-content{
+   font-size: 14.5px;
+   
+}
+
+.rightsidebar__ad-url{
+    font-size: 11px;
+    color:grey;
+    font-weight: normal;
+}
+
+//friend
+
+
+.rightsidebar__friend-image{
+    border: 1px solid #e4e6eb;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.rightsidebar__friend-container{
+    display: flex;
+    padding: 8px;
+    border: 1px solid none;
+    border-radius: 5px;
+}
+
+.rightsidebar__friend-container:hover{
+    background-color: #e4e6eb;
+}
+
+
+.rightsidebar__friend-content{
+    padding:   0px 10px;
+    width: 100%;
+}
+
+.rightsidebar__friend-name{
+    font-size: 15px;
+}
+
+.rightsidebar__friend-description{
+    font-size: 12px;
+    color:grey;
+    font-weight: normal;
+    padding: 5px 0px;
+}
+
+.rightsidebar__friend-buttons{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.rightsidebar__friend-button--delete{
+    background-color: rgb(211, 203, 203);
+    padding: 9px 38px;
+    border: 1px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: black; 
+}
+
+
+
+//contact list
+.rightsidebar__contact-list{
+    list-style: none;
+    margin: 0px;
+    padding: 8px;
+  
+    border-radius: 7px ;
+}
+
+.rightsidebar__contact-list:hover{
+    background-color: #e4e6eb; 
+}
+
+.rightsidebar__contact-list-item{
+ 
+}
+
+.rightsidebar__contact-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.rightsidebar__contact-img{
+    width: 30px;
+    height: 30px;
+    border: 1px ;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.rightsidebar__contact-text{
+    color: #000;
+    font-size: 15px;
+}
+.rightsidebar {
+    width: 300px;
+    height: 100%;
+    background-color: #f0f2f5;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.rightsidebar__ad{
+
+}
+
+.rightsidebar__title{
+    color:rgb(84, 81, 81);
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.rightsidebar__ad-container{
+    display: flex;
+    align-items: center;
+    border: 1px solid none;
+    border-radius: 7px;
+}   
+
+.rightsidebar__ad-container:hover{
+    background-color: #e4e6eb;
+}
+
+.rightsidebar__ad-image{
+    height: 100px;
+    width: 100px;
+    margin: 3px 10px;
+    border: 1px solid none;
+    border-radius: 10px;
+}
+
+.rightsidebar__ad-content{
+   font-size: 14.5px;
+   
+}
+
+.rightsidebar__ad-url{
+    font-size: 11px;
+    color:grey;
+    font-weight: normal;
+}
+
+//friend
+
+
+.rightsidebar__friend-image{
+    border: 1px solid #e4e6eb;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.rightsidebar__friend-container{
+    display: flex;
+    padding: 8px;
+    border: 1px solid none;
+    border-radius: 5px;
+}
+
+.rightsidebar__friend-container:hover{
+    background-color: #e4e6eb;
+}
+
+
+.rightsidebar__friend-content{
+    padding:   0px 10px;
+    width: 100%;
+}
+
+.rightsidebar__friend-name{
+    font-size: 15px;
+}
+
+.rightsidebar__friend-description{
+    font-size: 12px;
+    color:grey;
+    font-weight: normal;
+    padding: 5px 0px;
+}
+
+.rightsidebar__friend-buttons{
+   
+
+}
+
+.rightsidebar__friend-button--confirm{
+    background-color: rgb(48, 94, 247);
+    padding: 9px 20px;
+    border: 1px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.rightsidebar__friend-button--delete{
+    background-color: rgb(211, 203, 203);
+    padding: 2px 38px;
+    border: 1px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: black; 
+}
+
+
+
+//contact list
+.rightsidebar__contact-list{
+    list-style: none;
+    margin: 0px;
+    padding: 8px;
+  
+    border-radius: 7px ;
+}
+
+.rightsidebar__contact-list:hover{
+    background-color: #e4e6eb; 
+}
+
+.rightsidebar__contact-list-item{
+ 
+}
+
+.rightsidebar__contact-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.rightsidebar__contact-img{
+    width: 30px;
+    height: 30px;
+    border: 1px ;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.rightsidebar__contact-text{
+    color: #000;
+    font-size: 15px;
+}

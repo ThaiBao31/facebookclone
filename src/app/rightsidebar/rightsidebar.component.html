@@ -1,0 +1,51 @@
+<div class="rightsidebar">
+    <div class="rightsidebar__ad">
+        <div class="rightsidebar__title">Được tài trợ</div>
+        <div class="rightsidebar__ad-container">
+            <img src="assets/right-sidebar-image/right-2.jpg" alt="ad-image" class="rightsidebar__ad-image">
+            <div class="rightsidebar__ad-content">
+                <div class="rightsidebar__ad-text">Trải nghiệm môi trường học tập thân thiện và tích cực</div>
+                <div class="rightsidebar__ad-url">kbs.edu.au</div>
+            </div>
+        </div>
+        <div class="rightsidebar__ad-container">
+            <img src="assets/right-sidebar-image/right-1.jpg" alt="ad-image" class="rightsidebar__ad-image">
+            <div class="rightsidebar__ad-content">
+                <div class="rightsidebar__ad-text">Free Express Shipping</div>
+                <div class="rightsidebar__ad-url">kenthallco.com</div>
+            </div>
+        </div>
+    </div>
+
+    <hr  width="92%" size="1px" color="grey" />
+    <div class="rightsidebar__friend">
+        <div class="rightsidebar__title">Lời mời kết bạn</div>
+        <div class="rightsidebar__friend-container">
+            <img src="assets/right-sidebar-image/avatar-friend.png" class="rightsidebar__friend-image">
+            <div class="rightsidebar__friend-content">
+                <div class="rightsidebar__friend-name">Sóc Nhím</div>
+                <div class="rightsidebar__friend-description">12 bạn chung</div>
+                <div class="rightsidebar__friend-buttons">
+                    <button class="rightsidebar__friend-button rightsidebar__friend-button--confirm">
+                        Xácnhận 
+                    </button>
+                    <button class="rightsidebar__friend-button rightsidebar__friend-button--delete">
+                        Xóa
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr  width="92%" size="1px" color="grey" />
+    <div class="rightsidebar__contact">
+        <div class="rightsidebar__title">Người liên hệ</div>
+        <ul  *ngFor="let listf of listfriend"  class="rightsidebar__contact-list">
+            <li class="rightsidebar__contact-list-item">
+                <a href="#" class="rightsidebar__contact-link">
+                    <img [src]="listf.img" class="rightsidebar__contact-img">
+                    <div class="rightsidebar__contact-text">{{listf.name}}</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

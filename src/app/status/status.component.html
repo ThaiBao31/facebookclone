@@ -1,0 +1,23 @@
+<div class="status">
+    <div class="status__top">
+        <img src="assets/core-image/avatar.png" class="status__image">
+        <input class="status__input" type="text" placeholder="Bảo ơi, bạn đang nghĩ gì thế?">
+    </div>
+    <hr  width="92%" size="1px" color="#f0f2f5" />
+    <div class="status__bottom">
+        <ul *ngFor="let item of statusitem" class="status__action">
+            <li class="status__action-item">
+                <a class="status__action-link">
+                    <div class="status__action-icon">
+                        <i [class]="item.urlIcon"></i>                                    
+                    </div>
+                    <div class="status__action-text">
+                        <span class="status__action-name">
+                            {{ item.name }}
+                        </span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

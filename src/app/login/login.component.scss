@@ -1,0 +1,136 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e4e6eb;
+    overflow-y: auto ;
+}
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    height: 110vh;
+    background-color: #e4e6eb;
+
+}
+
+.login-page__content {
+    display: flex;
+    gap: 75px;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.login-page__img{
+    height: 106px;
+    margin-left: -30px;
+}
+
+
+
+.login-page__title {
+    color: #1877f2;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.login-page__subtitle {
+    font-size: 1.7rem;
+    color: black;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-form {
+    width: 380px;
+    height: 345px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.login-form__group {
+    margin-bottom: 15px;
+}
+
+.login-form__input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.login-form__button {
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #1877f2;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.login-form__button--crecontainer{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.login-form__button--create {
+    background-color: #42b72a;
+    width: 55%;
+    margin: 20px 0px;
+    
+}
+
+.login-form__link {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.login-form__link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    padding: 20px 60px;
+    text-align: center;
+    color: #606770;
+    background: #fff;
+    
+    
+}
+
+.footer__languages,
+.footer__links {
+    margin-bottom: 10px;
+    display: inline-block;
+    
+}
+
+.footer__link {
+    color: #606770;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 0.875rem;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}

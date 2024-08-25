@@ -1,0 +1,105 @@
+<header class="header">
+    <app-header></app-header>
+ </header>
+ <div class="main-content">     
+     <div class="sidebar">
+        <div class="sidebar__header">
+            <div class="sidebar__title">
+                <h1 class="title">Nhóm</h1>
+                <a  class="icon-container">
+                    <i class=" bi-gear-fill"></i>
+                </a>
+            </div>
+            <div class="sidebar__search">
+                <label class="sidebar__search-label">
+                    <span class="sidebar__search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </span>
+                </label>
+                <input class="sidebar__search-input" type="text" placeholder="Tìm kiếm trên Nhóm">
+            </div>
+        </div>
+        
+        
+         <nav class="sidebar__nav">
+             <ul *ngFor="let list_title of Listtitle " class="sidebar__nav-list">
+                 <li class="sidebar__nav-item">
+                     <a class="sidebar__nav-link">
+                         <div class="sidebar__nav-icon-wrapper">
+                             <i [class]="list_title.icon"></i>                                    
+                         </div>
+                         <div class="sidebar__nav-text-wrapper">
+                             <span class="sidebar__nav-text">
+                                 {{ list_title.title }}
+                             </span>
+                         </div>
+                     </a>
+                 </li>    
+             </ul>
+
+            
+             <hr  width="92%" size="1px" color="black" />
+             <h2 class="sidebar__category">Hạng mục</h2>
+             <ul *ngFor="let list_category of Category " class="sidebar__nav-list">
+                <li class="sidebar__nav-item">
+                    <a class="sidebar__nav-link">
+                        <div class="sidebar__nav-icon-wrapper">
+                            <i [class]="list_category.icon"></i>                                    
+                        </div>
+                        <div class="sidebar__nav-text-wrapper">
+                            <span class="sidebar__nav-text">
+                                {{ list_category.title }}
+                            </span>
+                        </div>
+                    </a>
+                </li>  
+            </ul>
+         </nav>
+     </div>
+
+
+    <div class="game__container">
+        <div class="game-interface">
+            <div class="game-interface__header">
+                <h1 class="game-interface__title">Tất cả game</h1>
+                <div class="game-interface__filters">
+                    <h3>Hạng mục</h3>
+                    <select class="game-interface__filter">
+                        <option value="all">Tất cả game</option>
+                        <option value="all">Hành động</option>
+                        <option value="all">Phiêu lưu</option>
+                        <option value="all">Chiến đấu</option>
+                        <option value="all">Đua xe</option>
+                    </select>
+                    <h3>Sắp xếp theo</h3>
+                    <select class="game-interface__sort">
+                        <option value="recommended">Đề xuất</option>
+                        <option value="recommended">Tên</option>
+                        <option value="recommended">Ngày</option>
+                    </select>
+                    
+                   
+                </div>
+            </div>
+            <div class="game-interface__grid">
+                <ul *ngFor = "let gamelist of Listgame"  class="game-list">
+                    <li class="game-card">
+                        <img [src]="gamelist.img"  class="game-card__image">
+                        <h2 class="game-card__title">{{gamelist.name}}</h2>
+                        <div class="game-card__tags">
+                            <span class="game-card__tag">Card</span>
+                        </div>
+                    </li>
+                </ul>                
+            </div>
+        </div>
+    </div>
+     
+    
+
+    
+ 
+     
+ </div>

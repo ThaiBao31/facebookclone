@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "user": "Bảo Ngọc",
+    "time": "16 giờ",
+    "content": "Em chẳng có gì, chỉ có 102 🌷",
+    "image": "assets/postlist-image/postavatar5.jpg",
+    "imagecontent": [
+        "assets/postlist-image/postlist8.jpg",
+        "assets/postlist-image/postlist9.jpg",
+        "assets/postlist-image/postlist10.jpg"
+    ],
+    "likes": 50,
+    "comments": 10,
+    "share":12
+  },
+    {
+      "id": 2,
+      "user": "McDonald's",
+      "time": "16 phút",
+      "content":"🧡 MENU MÃI MLEM - THÈM LÀ CỨ McDONALD’S 🧡\n🤔 Nghe ai đồn nhà McDonald’s hông có combo nào vừa mlem vừa tiết kiệm? Đồn nữa là giận liền liền á, vì tại McDonald’s không chỉ có các combo vừa ngon vừa no mà còn ê hề lựa chọn để McFans tha hồ “kén cá chọn canh.”\n🙋 Thôi thì giờ để McDonald’s điểm danh 1 vài combo cho cả nhà iu thêm thèm:\n     🍔 Combo Burger Gà: Tận hưởng miếng gà giòn tan cùng Khoai tây chiên và Nước ngọt GIÁ CHỈ 39K\n     🍔 Combo Burger Bò nướng: Căng bụng với lớp thịt bò nướng đậm đà, mọng nước cùng Khoai tây chiên và Nước ngọt GIÁ CHỈ 39K\n    🍗 Combo Cơm Gà Truyền thống: Thưởng thức sự kết hợp hoàn hảo của cơm trắng mềm dẻo cùng thịt gà giòn rụm kèm Nước ngọt mát lạnh GIÁ CHỈ 44K\n🎉 Bật mí là nhà McDonald’s còn nhiều “óp sần” nhẹ ví khác, McFans tụi mình cùng đèo nhau tới cửa hàng gần nhất để order ngay Menu Mãi Mlem thôi nào.\nTham khảo Menu Mãi Mlem tại: https://bitly.cx/Menu39K  \n#McDonalds #McDonaldsVietnam #MenuMaiMlem #ThemLaCuMcDonalds\n----------------------\n🔥 Liên hệ ngay Hotline: 19009001 để được tư vấn trực tiếp.\n🔥 Truy cập website McDonald’s để nhận các ưu đãi độc quyền tại link: https://mcdonalds.vn/",
+      "image": "assets/postlist-image/postavatar1.jpg",
+      "imagecontent": [
+        "assets/postlist-image/postlist1.jpg"
+    ],
+      "likes": 103,
+      "comments": 3,
+      "share": 6
+    },
+    {
+      "id": 3,
+      "user": "VnExpress.net",
+      "time": "1 giờ",
+      "content": "Nguyễn Thiên Phúc, thủ khoa đầu vào trường liên cấp Trần Đại Nghĩa với 96,5/100 điểm, học giỏi tiếng Anh, thích chơi game và đạp xe. Bố mẹ rất bất ngờ nhưng con thì có vẻ bình thản, dù đạt điểm cao hơn mong đợi. Phúc đang ở quê với ông bà, sau khi biết điểm, con rủ anh trai đi đạp xe. Chị Tiên mẹ Thiên Phúc cho hay.",
+      "image": "assets/postlist-image/postavatar2.jpg",
+      "imagecontent": [
+          "assets/postlist-image/postlist2.jpg"   
+
+      ],
+      "likes": 50,
+      "comments": 10,
+      "share":12
+    },
+  
+    {
+      "id": 4,
+      "user": "Nguyễn Anh Minh",
+      "time": "16 giờ",
+      "content": "Chúc mừng sinh nhật cậu 💗 forever20",
+      "image": "assets/postlist-image/postavatar4.jpg",
+      "imagecontent": [
+        "assets/postlist-image/postlist7.jpg"
+
+      ],
+      "likes": 50,
+      "comments": 10,
+      "share":12
+    } ,
+   
+    {
+      "id": 5,
+      "user": "Nhật Ký Yêu Thương",
+      "time": "16 giờ",
+      "content": "Biệt đội capybara tới đâyyyy 🫶🏻 đẹp lắm luôn é trùi xinh xỉu thơm mùi dâu nên mua nhaaa 😍\n👉 Capybara mini nhỏ xênh của mấy ní m ua ở đây nhen, có hơn 10 cành 1 bé hà:",
+      "image": "assets/postlist-image/postavatar3.jpg",
+      "imagecontent": [
+          "assets/postlist-image/postlist4.jpg",
+          "assets/postlist-image/postlist5.jpg",
+          "assets/postlist-image/postlist6.jpg"
+
+
+      ],
+      "likes": 50,
+      "comments": 10,
+      "share":12
+    }
+
+  ]
+  

@@ -1,0 +1,88 @@
+.status{
+    background-color: white;
+    
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+}
+
+.status__top{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 15px; 
+}
+.status__image{
+    width: 35px;
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.status__input{
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    font-size: 15px;
+    border-radius: 30px;
+    width: 100%;
+    background-color: #f0f2f5;
+   
+}
+
+.status__bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+   
+}
+
+.status__action{
+    list-style: none;
+    padding: 8px 5px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+   
+
+   
+}
+
+.status__action-link{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.status__action:hover{
+    background-color:#e4e6eb;
+}
+
+.status__action-icon{
+    padding-right: 6px;
+}
+
+.status__action-text{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color:rgb(84, 81, 81);
+}
+
+.status__action-icon .bi-camera-reels-fill{
+    background:  #dc3545;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.status__action-icon .bi-images{
+    background: #28a745;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.status__action-icon .bi-emoji-laughing{
+    background: #eab105;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
